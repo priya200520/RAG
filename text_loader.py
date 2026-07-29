@@ -11,4 +11,4 @@ for document in documents:
 #print(len(documents))
 #print(documents[0])
 #print(documents[0].page_content)
-print (documents[0].metadata)
+ print(documents[0].metadata)
