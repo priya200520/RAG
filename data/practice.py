@@ -1,25 +1,25 @@
 from langchain_community.document_loaders import PyPDFLoader
 
-# Create the loader object
+# Step 1: Create PDF Loader
 loader = PyPDFLoader("data/RAG_Practice_Sample.pdf")
 
-# Load the PDF
+# Step 2: Load the PDF
 documents = loader.load()
 
-# Print the type of output
-print("Type of documents:", type(documents))
+# Step 3: Check the data type
+print("Type:", type(documents))
 
-# Print total number of pages
+# Step 4: Count total pages
 print("Total Pages:", len(documents))
 
-# Print the first Document object
+# Step 5: Print first document
 print("\nFirst Document:\n")
 print(documents[0])
 
-# Print only the text of the first page
-print("\nFirst Page Content:\n")
+# Step 6: Print first page content
+print("\nPage Content:\n")
 print(documents[0].page_content)
 
-# Print metadata of the first page
+# Step 7: Print metadata
 print("\nMetadata:\n")
 print(documents[0].metadata)
